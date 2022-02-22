@@ -20,7 +20,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     @available(iOS 13.0, *)
     func setupWindow(windowScene: UIWindowScene) {
-        
+        let rootViewConroller = ListPhotoViewController()
+        let navigation = UINavigationController(rootViewController: rootViewConroller)
+    
+        self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        self.window?.windowScene = windowScene
+        self.window?.rootViewController = navigation
+        self.window?.makeKeyAndVisible()
     }
     
     @available(iOS 13.0, *)
