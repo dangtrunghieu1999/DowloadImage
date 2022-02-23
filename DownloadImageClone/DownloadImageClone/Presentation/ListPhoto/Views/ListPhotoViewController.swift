@@ -11,7 +11,7 @@ class ListPhotoViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "List Photo"
     }
     
 }
