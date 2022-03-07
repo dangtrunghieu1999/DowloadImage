@@ -17,3 +17,11 @@ target 'DownloadImage' do
   pod 'SDWebImage'
   
 end # target 'DownloadImage'
+
+target 'Domain' do
+  
+  use_frameworks!
+  rx_swift
+  rx_cocoa
+  
+end # target 'Domain'
